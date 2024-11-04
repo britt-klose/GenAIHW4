@@ -11,7 +11,7 @@
 **EX. Would experimenting with different hyperparameters or batch sizes yield better results?**
 * Changing the **batch size** can affect the GAN performance. As we learned in class, increasing the batch size offers faster training, but doesn’t necessarily lead to better performance. In fact making the batch size too large can cause the GAN to produce outputs that are very similar and cause the discriminator to overfit. Decreasing the batch size on the other hand can offer more diversity and higher quality in the generated images. The batch size here was 256. I tested this by decreasing the batch size to 100. This unfortunately did not have any noticeable effect in my results though the training time did increase.
   
-* Increasing the **number of epochs** can also help enhance performance though it can significantly add to training time. Additionally, too much training can cause the generated images to be less diverse and too similar to training samples. I implemented a small adjustment to test the results for 100 epochs instead of 50.
+* Increasing the **number of epochs** can also help enhance performance though it can significantly add to training time. Additionally, too much training can cause the generated images to be less diverse and too similar to training samples. A small adjustment to 100 epochs instead of 50 could reasonably increase performance.
   
 * Lastly, **changing the sample size** can help with performance. The original sample size included over 300,000 images. My GAN in comparison was trained only on about 1,000 photos to conserve memory and make the training process more efficient. If I were to add another 1,000 photos to my sample it could offer more diversity to my GAN model.
 
